@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CodePel" />
+    <title>Dropdown Sidebar Menu Example</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.3.0/tagify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+  </head>
+  <body>
+    <!-- Start DEMO HTML (Use the following code into your project)-->
+    <div class="sidebar">
+      <div class="logo-details shadow-sm">
+        <img src="../images/nav-logo (1).ico" alt="" />
+        <span class="admin mx-auto">
+          <div class="admin-btn d-inline-block float-end">
+            <button class="border-0 bg-dark text-white px-4 py-1 rounded-1">
+              Admin
+            </button>
+          </div>
+        </span>
+      </div>
+      <ul class="nav-links pt-3">
+        <li>
+          <a href="/DashBoard/index.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bxs-layer"></i>
+              <span class="link_name">Catalog</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Catalog</a></li>
+            <li>
+              <a href="../Product List/product-list.html">Product List</a>
+            </li>
+            <li>
+              <a href="../Add Product/add-product.html">Add Product</a>
+            </li>
+            <li>
+              <a href="../Category List/category-list.html">Categories List</a>
+            </li>
+            <li><a href="../Category/category.html">Category</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-user"></i>
+              <span class="link_name">Customers</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Customers</a></li>
+            <li>
+              <a href="../Customer List/customer-list.html">Customers List</a>
+            </li>
+            <li><a href="../Customer/customer.html">Customer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-cart-alt"></i>
+              <span class="link_name">Orders</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Orders</a></li>
+            <li><a href="../Order List/order-list.html">Orders List</a></li>
+            <li>
+              <a href="../Order Details/order-details.html">Order Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-heart"></i>
+              <span class="link_name">Marketing</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Marketing</a></li>
+            <li><a href="../Coupon List/coupon-list.html">Coupons List</a></li>
+            <li><a href="../Coupon/coupon.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-envelope"></i>
+              <span class="link_name">Inbox</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Inbox</a></li>
+            <li><a href="../Inbox List/list.html">List</a></li>
+            <li>
+              <a href="../Inbox Conversation/conversation.html">Converstaion</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Chat/chat.html">
+            <i class="bx bx-chat"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="../Chat/chat.html">Chat</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active">
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="/DashBoard/Setting table/setting-table.html"
+                >Table of Content</a
+              >
+            </li>
+            <li><a href="../Setting Form/setting-from.html">Forms</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Explore/explore.html">
+            <i class="bx bx-compass"></i>
+            <span class="link_name">Explore</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="../Explore/explore.html">Explore</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../History/history.html">
+            <i class="bx bx-history"></i>
+            <span class="link_name">History</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="../History/history.html">History</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content-header shadow-sm d-flex bg-white sticky-top">
+        <i class="bx bx-menu"></i>
+        <div class="form-group has-search w-25 d-inline-block">
+          <span class="bx bx-search form-control-feedback"></span>
+          <input
+            type="text"
+            class="form-control rounded-0"
+            placeholder="Search for the truth"
+            style="background-color: #ebedf0"
+          />
+        </div>
+        <div class="mx-auto"></div>
+        <div class="flag-list">
+          <div class="flag-dropdown rounded-1">
+            <button
+              class="btn dropdown-toggle p-2"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img id="selectedImage" src="../images/1.png" alt="" />
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeImage('../images/1.png')"
+                >
+                  <img src="../images/1.png" alt="" /> Pakistan
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeImage('../images/2.png')"
+                >
+                  <img src="../images/2.png" alt="" /> Aland Island
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeImage('../images/3.png')"
+                >
+                  <img src="../images/3.png" alt="" /> Argentina
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notification-div ms-3">
+          <div class="icon" id="bell" style="padding-top: 0.75rem">
+            <i class="fa-solid fa-bell fs-5"></i>
+          </div>
+          <div class="notifications" style="z-index: 1" id="box">
+            <h2>Notifications - <span>2</span></h2>
+            <div class="notifications-item">
+              <img src="https://i.imgur.com/uIgDDDd.jpg" alt="img" />
+              <div class="text">
+                <h4>Samso aliao</h4>
+                <p>Samso Nagaro Like your home work</p>
+              </div>
+            </div>
+            <div class="notifications-item">
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/vote-badge.png"
+                alt="img"
+              />
+              <div class="text">
+                <h4>John Silvester</h4>
+                <p>+20 vista badge earned</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user ms-4">
+          <div class="dropdown">
+            <a
+              href="#"
+              class="d-flex align-items-center dropdown-toggle text-decoration-none"
+              role="button"
+              id="profileDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="profile-pic me-2">
+                <img
+                  src="../images/CEO-img.png"
+                  alt="Image"
+                  class="rounded"
+                  style="width: 40px"
+                />
+              </div>
+              <div class="profile-info">
+                <h6 class="mb-0 text-dark">Kevin Thomas</h6>
+                <small class="text-muted">DNK@emaple.com</small>
+              </div>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="icon icon-dashboard"></span>Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="icon icon-mail_outline"></span> Inbox
+                  <span class="badge bg-primary">3</span></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="icon icon-cog"></span> Settings
+                  <span class="badge bg-danger">New</span></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item border-top" href="#"
+                  ><span class="icon icon-sign-out"></span> Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container home-content p-4">
+        <div class="py-1 text-muted">
+          <small
+            ><a href="#" class="text-muted text-decoration-none">Dashboard</a> /
+            Settings</small
+          >
+        </div>
+        <div class="dashboard-heading d-flex align-items-center mb-3">
+          <div class="heading">
+            <h3>Settings</h3>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div
+              class="card text-center px-3 py-5 rounded-0"
+              style="cursor: pointer"
+            >
+              <div><i class="bx bx-cube fs-3 text-muted"></i></div>
+              <div><h5>General</h5></div>
+              <div>
+                <small class="text-muted"
+                  >Mathematics began to develop at an accelerating pace</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END EDMO HTML (Happy Coding!)-->
+
+    <!-- Script JS -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.3.0/tagify.min.js"></script>
+    <!--$%analytics%$-->
+  </body>
+</html>

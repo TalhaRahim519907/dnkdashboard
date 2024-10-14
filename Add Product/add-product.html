@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CodePel" />
+    <title>DNK DashBoard</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.3.0/tagify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+  </head>
+  <body>
+    <!-- Start DEMO HTML (Use the following code into your project)-->
+    <div class="sidebar">
+      <div class="logo-details shadow-sm">
+        <img src="../images/nav-logo (1).ico" alt="" />
+        <span class="admin mx-auto">
+          <div class="admin-btn d-inline-block float-end">
+            <button class="border-0 bg-dark text-white px-4 py-1 rounded-1">
+              Admin
+            </button>
+          </div>
+        </span>
+      </div>
+      <ul class="nav-links pt-3">
+        <li>
+          <a href="/DashBoard/index.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+        </li>
+        <li class="active">
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bxs-layer"></i>
+              <span class="link_name">Catalog</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Catalog</a></li>
+            <li>
+              <a href="../Product List/product-list.html">Product List</a>
+            </li>
+            <li>
+              <a href="/DashBoard/Add Product/add-product.html">Add Product</a>
+            </li>
+            <li>
+              <a href="../Category List/category-list.html">Categories List</a>
+            </li>
+            <li><a href="../Category/category.html">Category</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-user"></i>
+              <span class="link_name">Customers</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Customers</a></li>
+            <li>
+              <a href="../Customer List/customer-list.html">Customers List</a>
+            </li>
+            <li><a href="../Customer/customer.html">Customer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-cart-alt"></i>
+              <span class="link_name">Orders</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Orders</a></li>
+            <li><a href="../Order List/order-list.html">Orders List</a></li>
+            <li>
+              <a href="../Order Details/order-details.html">Order Details</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-heart"></i>
+              <span class="link_name">Marketing</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Marketing</a></li>
+            <li><a href="../Coupon List/coupon-list.html">Coupons List</a></li>
+            <li><a href="../Coupon/coupon.html">Coupon</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-envelope"></i>
+              <span class="link_name">Inbox</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Inbox</a></li>
+            <li><a href="../Inbox List/list.html">List</a></li>
+            <li>
+              <a href="../Inbox Conversation/conversation.html">Converstaion</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Chat/chat.html">
+            <i class="bx bx-chat"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="../Chat/chat.html">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="../Setting table/setting-table.html">Table of Content</a>
+            </li>
+            <li><a href="../Setting Form/setting-from.html">Forms</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Explore/explore.html">
+            <i class="bx bx-compass"></i>
+            <span class="link_name">Explore</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="../Explore/explore.html">Explore</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../History/history.html">
+            <i class="bx bx-history"></i>
+            <span class="link_name">History</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="../History/history.html">History</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content-header shadow-sm d-flex bg-white sticky-top">
+        <i class="bx bx-menu"></i>
+        <div class="form-group has-search w-25 d-inline-block">
+          <span class="bx bx-search form-control-feedback"></span>
+          <input
+            type="text"
+            class="form-control rounded-0"
+            placeholder="Search for the truth"
+            style="background-color: #ebedf0"
+          />
+        </div>
+        <div class="mx-auto"></div>
+        <div class="flag-list">
+          <div class="flag-dropdown rounded-1">
+            <button
+              class="btn dropdown-toggle p-2"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img id="selectedImage" src="../images/1.png" alt="" />
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeImage('../images/1.png')"
+                >
+                  <img src="../images/1.png" alt="" /> Pakistan
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeImage('../images/2.png')"
+                >
+                  <img src="../images/2.png" alt="" /> Aland Island
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeImage('../images/3.png')"
+                >
+                  <img src="../images/3.png" alt="" /> Argentina
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notification-div ms-3">
+          <div class="icon" id="bell" style="padding-top: 0.75rem">
+            <i class="fa-solid fa-bell fs-5"></i>
+          </div>
+          <div class="notifications" style="z-index: 1" id="box">
+            <h2>Notifications - <span>2</span></h2>
+            <div class="notifications-item">
+              <img src="https://i.imgur.com/uIgDDDd.jpg" alt="img" />
+              <div class="text">
+                <h4>Samso aliao</h4>
+                <p>Samso Nagaro Like your home work</p>
+              </div>
+            </div>
+            <div class="notifications-item">
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/vote-badge.png"
+                alt="img"
+              />
+              <div class="text">
+                <h4>John Silvester</h4>
+                <p>+20 vista badge earned</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user ms-4">
+          <div class="dropdown">
+            <a
+              href="#"
+              class="d-flex align-items-center dropdown-toggle text-decoration-none"
+              role="button"
+              id="profileDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="profile-pic me-2">
+                <img
+                  src="../images/CEO-img.png"
+                  alt="Image"
+                  class="rounded"
+                  style="width: 40px"
+                />
+              </div>
+              <div class="profile-info">
+                <h6 class="mb-0 text-dark">Kevin Thomas</h6>
+                <small class="text-muted">DNK@emaple.com</small>
+              </div>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="icon icon-dashboard"></span>Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="icon icon-mail_outline"></span> Inbox
+                  <span class="badge bg-primary">3</span></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="icon icon-cog"></span> Settings
+                  <span class="badge bg-danger">New</span></a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item border-top" href="#"
+                  ><span class="icon icon-sign-out"></span> Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------------- -->
+      <div class="container home-content p-4">
+        <div class="py-1 text-muted">
+          <small
+            ><a href="#" class="text-muted text-decoration-none">Dashboard</a> /
+            <a href="#" class="text-muted text-decoration-none">Products</a> /
+            Add Product</small
+          >
+        </div>
+        <div class="dashboard-heading d-flex align-items-center mb-3">
+          <div class="heading">
+            <h3>Add Product</h3>
+          </div>
+          <div class="mx-auto"></div>
+          <div class="export-btn">
+            <button class="border py-1 px-3 rounded-1">Duplicate</button>
+          </div>
+          <div class="export-btn ms-3">
+            <button class="border py-1 px-3 rounded-1">Save</button>
+          </div>
+        </div>
+        <div class="container-fluid pb-4">
+          <div class="row">
+            <div class="col-md-9 ps-0 mb-3">
+              <div class="card p-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-4">
+                  <h2 class="fs-5 mb-0">Basic Information</h2>
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    id="exampleFormControlInput1"
+                    value="Green Hoodie GREEN150"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Slug</label
+                  >
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="border"
+                      style="background: #e9ecef; padding: 0.375rem 0.75rem"
+                      >https://example.com/products/</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control rounded-0"
+                      id="exampleFormControlInput1"
+                      value="green-hoodie-green-150"
+                    />
+                  </div>
+                  <div>
+                    <small class="text-muted"
+                      >Unique human-readable product identifier. No longer than
+                      255 characters.</small
+                    >
+                  </div>
+                </div>
+                <div class="text-edditor mb-4">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Description</label
+                  >
+                  <div id="editor" style="height: 13rem">
+                    <p>Hello World!</p>
+                    <p>Some initial <strong>bold</strong> text</p>
+                    <p><br /></p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="exampleFormControlTextarea1"
+                    class="form-label"
+                    style="font-weight: 600 !important"
+                    >Short Description</label
+                  >
+                  <textarea
+                    class="form-control rounded-0"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="card p-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-4">
+                  <h2 class="fs-5 mb-0">Pricing</h2>
+                </div>
+                <div class="mb-3 price-input">
+                  <div class="d-inline-block price">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label mb-1 fw-normal"
+                      style="font-weight: 600 !important"
+                      >Price</label
+                    >
+                    <input
+                      type="Number"
+                      class="form-control rounded-0"
+                      id="exampleFormControlInput1"
+                    />
+                  </div>
+                  <div class="d-inline-block ms-4 price">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label mb-1 fw-normal"
+                      style="font-weight: 600 !important"
+                      >Old Price</label
+                    >
+                    <input type="Number" class="form-control rounded-0" />
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <a href="#" class="text-decoration-none">Sheduled Discount</a>
+                </div>
+              </div>
+              <div class="card p-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-4">
+                  <h2 class="fs-5 mb-0">Inventory</h2>
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >SKU</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    id="exampleFormControlInput1"
+                    value="GREEN150"
+                  />
+                </div>
+                <div class="mb-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input rounded-0"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Enable Stock Management
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Stock Quantity</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control rounded-0"
+                    id="exampleFormControlInput1"
+                    value="18"
+                  />
+                </div>
+              </div>
+              <div class="card p-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-4">
+                  <h2 class="fs-5 mb-0">Upload Image</h2>
+                </div>
+                <div class="file-upload">
+                  <div class="image-upload-wrap">
+                    <input
+                      class="file-upload-input"
+                      type="file"
+                      onchange="readURL(this);"
+                      accept="image/*"
+                    />
+                    <div class="drag-text">
+                      <h3>Drag and drop a file or select add Image</h3>
+                    </div>
+                  </div>
+                  <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                      <button
+                        type="button"
+                        onclick="removeUpload()"
+                        class="remove-image"
+                      >
+                        Remove <span class="image-title">Uploaded Image</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-4 rounded-0 shadow-sm">
+                <div class="mb-4">
+                  <h2 class="fs-5 mb-1">Search Engine Optimization</h2>
+                  <small class="text-muted"
+                    >Provide information that will help improve the snippet and
+                    bring your category to the top of search engines.</small
+                  >
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Page Title</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Meta Description</label
+                  >
+                  <textarea
+                    class="form-control rounded-0"
+                    id="exampleFormControlTextarea1"
+                    rows="2"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 ps-0 pe-0 mb-3">
+              <div class="card px-3 py-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-4">
+                  <h2 class="fs-5 mb-0">Visibility</h2>
+                </div>
+                <div class="radios-btn mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      Published
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      Sheduled
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      Hidden
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label mb-1 fw-normal"
+                    style="font-weight: 600 !important"
+                    >Publish Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control rounded-0 mb-1"
+                    id="exampleFormControlInput1"
+                  />
+                  <div class="lh-1">
+                    <small class="text-muted" style="font-size: 12px"
+                      >The category will not be visible until the specified
+                      date.</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card px-3 py-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-0">
+                  <h2 class="fs-5 mb-4">Categories</h2>
+                  <div class="mb-3">
+                    <select id="choices-multiple-remove-button" multiple>
+                      <option value="Mens">Mens</option>
+                      <option value="Womens">Womens</option>
+                      <option value="Accessories">Accessories</option>
+                      <option value="Everything">Everything</option>
+                    </select>
+                  </div>
+                  <div>
+                    <small>
+                      <a href="#" class="text-decoration-none"
+                        >Add new category</a
+                      >
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="card px-3 py-4 rounded-0 shadow-sm mb-4">
+                <div class="mb-0">
+                  <h2 class="fs-5 mb-4">Tags</h2>
+                  <div class="mb-3">
+                    <select id="choices-multiple-remove-button" multiple>
+                      <option value="Mens">Mens</option>
+                      <option value="Womens">Womens</option>
+                      <option value="Accessories">Accessories</option>
+                      <option value="Everything">Everything</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div
+        class="footer px-4 p-3"
+        style="border-top: 1px solid rgba(128, 128, 128, 0.356)"
+      >
+        <div class="d-flex align-items-center">
+          <div>
+            <small class="text-muted"
+              >DNK Admin — eCommerce Dashboard © 2023</small
+            >
+          </div>
+          <div class="mx-auto"></div>
+          <div class="me-3">
+            <small class="text-muted"
+              >Powered by DNK-Designed by:
+              <a href="#" class="text-decoration-none">Talha Gujjar</a></small
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END EDMO HTML (Happy Coding!)-->
+
+    <!-- Script JS -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.3.0/tagify.min.js"></script>
+    <script>
+      var toolbarOptions = [
+        ["bold", "italic", "underline", "strike"], // toggled buttons
+        ["blockquote", "code-block"],
+
+        [{ header: 1 }, { header: 2 }], // custom button values
+        [{ list: "ordered" }, { list: "bullet" }],
+        [{ script: "sub" }, { script: "super" }], // superscript/subscript
+        [{ indent: "-1" }, { indent: "+1" }], // outdent/indent
+        [{ direction: "rtl" }], // text direction
+
+        [{ size: ["small", false, "large", "huge"] }], // custom dropdown
+        [{ header: [1, 2, 3, 4, 5, 6, false] }],
+
+        [{ color: [] }, { background: [] }], // dropdown with defaults from theme
+        [{ font: [] }],
+        [{ align: [] }],
+
+        ["clean"], // remove formatting button
+      ];
+
+      var quill = new Quill("#editor", {
+        modules: {
+          toolbar: toolbarOptions,
+        },
+        theme: "snow",
+      });
+
+      // ------------------------------------------------
+      $(document).ready(function () {
+        var multipleCancelButton = new Choices(
+          "#choices-multiple-remove-button",
+          {
+            removeItemButton: true,
+            maxItemCount: 5,
+            searchResultLimit: 5,
+            // renderChoiceLimit: 5,
+          }
+        );
+      });
+    </script>
+    <!--$%analytics%$-->
+  </body>
+</html>
